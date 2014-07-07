@@ -1,9 +1,9 @@
 # Site settings
 title: Curious Vipsy
-email: your-email@domain.com
-description: ""
+email: bansalvipul.111@gmail.com
+description: "Personal Blog"
 baseurl: ""
-url: "http://localhost:8080"
+url: "http://vipsyvipul.github.io"
 twitter_username: vipsy
 github_username:  vipsyvipul
 port: 8080
