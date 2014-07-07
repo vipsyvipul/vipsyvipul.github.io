@@ -1,0 +1,13 @@
+# Site settings
+title: Curious Vipsy
+email: your-email@domain.com
+description: ""
+baseurl: ""
+url: "http://localhost:8080"
+twitter_username: vipsy
+github_username:  vipsyvipul
+port: 8080
+
+# Build settings
+markdown: kramdown
+permalink: pretty

@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <div class="posts">
+
+    {% for post in site.posts %}
+
+        <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        <!-- <span class="post-date">{{ post.date | date_to_long_string }}</span> -->
+
+        {% if post.excerpt %}<p class="post-excerpt">{{ post.excerpt }}</p>{% endif %}
+        
+    {% endfor %}
+    
+  </div>
+<hr>
+  <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

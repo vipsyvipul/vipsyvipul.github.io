@@ -1,0 +1,112 @@
+a{
+	outline: none;
+}
+
+/**** FONTS ****/
+h1, h2, h3, p{
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+}
+
+h1, h2{
+	font-weight: 600;
+}
+
+p{
+	font-weight: 400;
+}
+
+
+/**** HEADER ****/
+header{
+	height: 350px;
+	background: url(../images/curious.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+nav li{
+	margin-top: 30px;
+	text-align: center;
+}
+
+nav a{
+	color: white;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+nav a:hover{
+	color: white;
+}
+
+header .title{
+    font-size: 72px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.05em;
+    clear: both;
+}
+
+header span{
+	border: white solid 0.12em;
+	padding: 3px 30px;
+}
+
+.inline-list li{
+	margin-left: 0px;
+}
+
+/**** HOMEPAGE ***/
+h2{
+	margin-top: 20px;
+}
+
+h2 a:hover{
+	color: black;
+	text-decoration: underline;
+}
+
+.post-link{
+	color: black;
+}
+
+.post-excerpt{
+	margin-top: 8px;
+}
+
+.post-date{
+	text-decoration: underline;
+}
+
+/**** RSS ****/
+.rss-subscribe{
+	margin: 20px 0 10px 0;
+}
+
+
+/**** FOOTER ****/
+footer{
+	height: 85px;
+	overflow: hidden;
+}
+footer .icon{
+	padding: 0px;
+	display: block;
+}
+
+hr{
+	margin-bottom: 5px;
+}
+
+
+/**** RESPONSIVE ****/
+@media only screen and (max-device-width: 480px){
+	header{
+		height: 250px;
+	}
+	header .title{
+		font-size: 32px;
+	}
+}
