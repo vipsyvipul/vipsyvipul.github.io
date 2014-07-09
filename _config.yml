@@ -1,12 +1,12 @@
 # Site settings
-title: Curious Vipsy
+title: Curious
 email: bansalvipul.111@gmail.com
 description: "Personal Blog"
 baseurl: ""
 url: "http://vipsyvipul.github.io"
 twitter_username: vipsy
 github_username:  vipsyvipul
-port: 8080
+port: 8000
 
 # Build settings
 markdown: kramdown
