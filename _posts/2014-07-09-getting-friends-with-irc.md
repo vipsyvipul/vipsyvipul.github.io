@@ -14,6 +14,7 @@ A group of people talking on the same topic form a channel. Channel's name is pr
 
 `/join <#channelname>`
 
+
 ###Registering::
 
 Although many servers do not require you to register a nick but it is a good practice to register one for yourself. Doing so will reserve your nick for you. To register type:
