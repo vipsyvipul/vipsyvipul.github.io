@@ -117,7 +117,9 @@ hr{
 /**** RESPONSIVE ****/
 @media only screen and (max-device-width: 480px){
 	header{
+		background: url(../images/curious640.jpg) no-repeat center center;
 		height: 250px;
+		background-size: cover;
 	}
 	header .title{
 		font-size: 32px;
