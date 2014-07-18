@@ -69,7 +69,8 @@ h2{
 
 h2 a:hover{
 	color: black;
-	text-decoration: underline;
+	border: 2px solid rgb(0,0,0);
+	padding: 5px;
 }
 
 .post-link{
@@ -92,6 +93,7 @@ code{
 	font-family: 'Source Code Pro';
 	font-weight: 300;
 }
+
 
 /**** RSS ****/
 .rss-subscribe{
