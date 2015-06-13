@@ -1,0 +1,19 @@
+- name: Human I am
+  description: Human I am Foundation is a non-government organization with a vision to make humanity the only existing religion.
+  link: http://www.humaniam.org
+  image: /assets/images/work/hia.png
+
+- name: OmniSoft Solutions
+  description: A web and mobile applications development startup.
+  link: http://www.omnisoftsolutions.in
+  image: /assets/images/work/oss.png
+
+- name: Code a Color
+  description: An online color value interconvertor. I created this web application while playing around with jQuery.
+  link: http://vipsyvipul.github.io/Code-a-Color/
+  image: /assets/images/work/cac.png
+
+- name: Camaraderie
+  description: A colorful theme for Google-Chrome browsers.
+  link: https://github.com/vipsyvipul/camaraderie
+  image: /assets/images/work/cam.png

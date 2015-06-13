@@ -1,0 +1,72 @@
+---
+title: My work - VipsyVipul
+---
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+{% include head.html %}
+<!-- OGP -->
+{% include metadata.html %}
+
+<body>
+    <div class="wrapper">
+
+        {% include nav.html %}
+
+        <section class="work-head">
+            <div class="work-title">
+                <p>THINGS I've MADE</p>
+            </div>
+        </section>
+        <div class="row scroll-icon">
+            <div class="small-3 small-centered medium-1 medium-centered large-1 large-centered columns sd-mou">
+                <a href="#work-blocks"><img src="/assets/icons/sd-mou.svg" alt="Scroll Down" style="width:100px;height:110px;"></a>
+            </div>
+            <div class="small-3 small-centered medium-1 medium-centered large-1 large-centered columns sd-mob">
+                <a href="#work-blocks"><img src="/assets/icons/sd-mob.svg" alt="Slide Down" style="width:100px;height:110px;"></a>
+            </div>
+        </div>
+        <section class="work-blocks" id="work-blocks">
+            {% for work in site.data.works %}
+            <div class="row">
+                <div class="small-12 medium-6 large-6 columns block">
+                    <a href="{{ work.link }}" target="_blank"><img src="{{ work.image }}" alt="image"></a>
+                </div>
+                <div class="small-12 medium-6 large-6 columns block data">
+                    <h3>{{ work.name }}</h3>
+                    <p>{{ work.description}}</p>
+                    <a href="{{ work.link }}" target="_blank">
+                        <button>{{work.name}}</button>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </section>
+        <section class="contact" id="contact">
+            <div class="row">
+                <div class="small-12 small-centered medium-6 medium-centered large-6 large-centered columns">
+                    <h2>Can I help you?</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-12 medium-6 medium-centered large-6 large-centered columns">
+                    <form action="//formspree.io/bansalvipul.111@gmail.com" method="POST" id="vv-form">
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <input type="hidden" name="_subject" value="New submission on VV!" />
+                        <textarea name="" id="" rows="5" name="message" placeholder="How can I help you?"></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+                
+            
+        </section>
+        {% include footer.html %}
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    {% include google_analytics.html %} 
+</body>
+
+</html>
