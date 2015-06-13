@@ -11,7 +11,7 @@
 - name: Code a Color
   description: An online color value interconvertor. I created this web application while playing around with jQuery.
   link: http://vipsyvipul.github.io/Code-a-Color/
-  image: /assets/images/work/cac.png
+  image: /assets/images/work/cac.PNG
 
 - name: Camaraderie
   description: A colorful theme for Google-Chrome browsers.
