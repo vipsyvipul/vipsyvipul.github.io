@@ -59,9 +59,72 @@ header .title {
     background-color: #53bf6b;
     text-align: center;
 }
+/****MENU****/
 
-.inline-list li {
-    /* 	margin-left: 0px; */
+.menu-list {
+    background-color: #fff;
+    height: 80px;
+    border-radius: 0 0 10px 10px;
+}
+
+.menu-list nav {
+    display: block !important;
+}
+
+.menu-list ul {
+    margin: 1.5em auto;
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu-list li {
+    font-family: 'century gothic', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.1;
+    display: inline-block;
+    width: 10%;
+}
+
+.menu-list li a {
+    color: #444;
+    transition: all 0.35s;
+}
+
+.menu-list li a:hover,
+.active {
+    border-bottom: 6px solid #19763e;
+}
+
+.menu-list li:nth-child(1) {
+    margin-right: 5%;
+}
+
+.menu-list li:nth-child(2) {
+    margin-right: 10%;
+}
+
+.menu-list li:nth-child(3) {
+    margin-left: 10%;
+}
+
+.menu-list li:nth-child(4) {
+    margin-left: 5%;
+}
+
+.menu .logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -64px;
+}
+
+.menu .logo img {
+    width: 128px;
+    height: 128px;
+}
+
+.menu-icon {
+    display: none;
 }
 /**** HOMEPAGE ***/
 
@@ -133,7 +196,7 @@ code {
 hr {
     margin-bottom: 5px;
 }
-/**** WORK ****/
+/****WORK****/
 
 .wrapper {
     background: url(../images/cs.png)repeat center center;
@@ -141,68 +204,6 @@ hr {
 
 .wrapper .row {
     max-width: 80em;
-}
-
-.menu-list {
-    background-color: #fff;
-    height: 80px;
-    border-radius: 0 0 10px 10px;
-}
-
-.menu-list nav {
-    display: block !important;
-}
-
-.menu-list ul {
-    margin: 1.5em auto;
-    list-style-type: none;
-    text-align: center;
-}
-
-.menu-list li {
-    font-family: 'century gothic', sans-serif;
-    font-size: 1.5em;
-    line-height: 1.1;
-    display: inline-block;
-    width: 10%;
-}
-
-.menu-list li a {
-    color: #444;
-    transition: all 0.35s;
-}
-
-.menu-list li a:hover,
-.active {
-    border-bottom: 6px solid #19763e;
-}
-
-.menu-list li:nth-child(1) {
-    margin-right: 5%;
-}
-
-.menu-list li:nth-child(2) {
-    margin-right: 10%;
-}
-
-.menu-list li:nth-child(3) {
-    margin-left: 10%;
-}
-
-.menu-list li:nth-child(4) {
-    margin-left: 5%;
-}
-
-.menu .logo {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: -64px;
-}
-
-.menu .logo img {
-    width: 128px;
-    height: 128px;
 }
 
 .work-head {
@@ -244,7 +245,7 @@ hr {
 }
 
 .block {
-    margin: 40px 0;
+    margin: 2.4em 0;
 }
 
 .block img {
@@ -255,11 +256,12 @@ hr {
 }
 
 .work-blocks .data {
-    padding: 5%;
+    padding: 1em 2em;
 }
 
 .work-blocks h3 {
     font-family: 'century gothic', sans-serif;
+    font-weight: bold;
 }
 
 .work-blocks button {
@@ -277,6 +279,7 @@ hr {
     background-color: #19763e;
     color: #fff;
 }
+/****CONTACT****/
 
 .contact {
     text-align: center;
@@ -337,10 +340,6 @@ hr {
     color: #19763e;
     font-family: 'century gothic', sans-serif;
     font-size: 1.2em;
-}
-
-.menu-icon {
-    display: none;
 }
 /**** RESPONSIVE ****/
 
