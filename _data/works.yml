@@ -1,19 +1,19 @@
 - name: Human I am
-  description: Human I am Foundation is a non-government organization with a vision to make humanity the only existing religion.
+  description: Human I am Foundation is a non-government organization with a vision to make humanity the only existing religion on earth. I too am a proud member of the organization hence, playing my role in helping them spread awareness to the farthest shore.
   link: http://www.humaniam.org
   image: /assets/images/work/hia.png
 
 - name: OmniSoft Solutions
-  description: A web and mobile applications development startup.
+  description: A web and mobile applications development startup. They found me on Facebook and then had a series of chat regarding their business and what they want me to build. Complying with their expectation(s) I was able to reserve a slot for them in web space.
   link: http://www.omnisoftsolutions.in
   image: /assets/images/work/oss.png
 
 - name: Code a Color
-  description: An online color value interconvertor. I created this web application while playing around with jQuery.
+  description: An online color value interconvertor. I created this web application while playing around with jQuery primarily to get a hang of it. It helps designers to interconvert color values between the three most widely used color codes i.e. RGB, CMYK and Hex.
   link: http://vipsyvipul.github.io/Code-a-Color/
   image: /assets/images/work/cac.PNG
 
 - name: Camaraderie
-  description: A colorful theme for Google-Chrome browsers.
+  description: A colorful theme for Google-Chrome browsers. I liked the polygonal pattern so much that I decided to make it the background image of my browser. Being an unpacked extension, it gives you the ability to customize it for yourself. Find instructions to make it yours by clicking on the link.
   link: https://github.com/vipsyvipul/camaraderie
   image: /assets/images/work/cam.png
