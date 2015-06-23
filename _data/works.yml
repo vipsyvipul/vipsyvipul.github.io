@@ -1,3 +1,8 @@
+- name: HTML5 Phone Mockups
+  description: A personal project, HTML5 Phone Mockups are mockup of world's most popular smartphones built entirely in HTML. These mockups can be used for showcasing apps, resposnsive websites et al.
+  link: http://vipsyvipul.github.io/htmlPhoneMockup/
+  image: /assets/images/work/hpm.png
+
 - name: Human I am
   description: Human I am Foundation is a non-government organization with a vision to make humanity the only existing religion on earth. I too am a proud member of the organization hence, playing my role in helping them spread awareness to the farthest shore.
   link: http://www.humaniam.org
