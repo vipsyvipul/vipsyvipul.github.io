@@ -1,10 +1,3 @@
-h1{
-	text-align: center;
-}
-.para{
-	width: 40%;
-	margin: 0 auto;
-}
 .pc-segment{
 	position: fixed;
 	right: 5em;
@@ -15,6 +8,7 @@ h1{
 .pc-sub-text{
 	margin: 0 .3em .5em .3em;
 	padding-top: 1em;
+	font-size: 1em !important;
 }
 .pc-icon-wrapper{
 	width: 4.5em;
