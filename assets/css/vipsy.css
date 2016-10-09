@@ -341,7 +341,13 @@ hr {
     font-family: 'century gothic', sans-serif;
     font-size: 1.2em;
 }
-/**** RESPONSIVE ****/
+
+/**** SUBSCRIBE ****/
+.subscribe-block .r-btn1{
+
+}
+
+/**** RESPONSI***/
 
 @media only screen and (max-width: 640px) {
     header {

@@ -5,11 +5,11 @@ permalink: /about/
 ---
 
 Howdy reader!
-My name is Vipul Bansal and I recently graduated.
+My name is Vipul Bansal and I am a Marketing Analyst at [PushCrew](https://pushcrew.com) \(Wingify\).
 
-I enjoy reading books and non-fictions hold me longer than fictions do (Harry Potter series being an exception). When not reading I mostly devote my time writing code, designing websites and watching cute cat videos.
+I enjoy reading books and non-fictions hold me longer than fictions do (Harry Potter series being an exception). When not reading books I mostly read online journals and watch cute cat videos.
 
-Hey I am free for next few months so you can check out my [work](http://vipsyvipul.github.io/work) and ping me your interest at bansalvipul.111 (at) gmail.com
+Nice meeting you!
 
 Courtesy:
 

@@ -1,0 +1,82 @@
+h1{
+	text-align: center;
+}
+.para{
+	width: 40%;
+	margin: 0 auto;
+}
+.pc-segment{
+	position: fixed;
+	right: 5em;
+	bottom: 3em;
+	width: 12em;
+	z-index: 99999;
+}
+.pc-sub-text{
+	margin: 0 .3em .5em .3em;
+	padding-top: 1em;
+}
+.pc-icon-wrapper{
+	width: 4.5em;
+	height: 4.5em;
+	background-color: #fff;
+	border-radius: 50%;
+	float: right;
+	box-shadow: 3px 5px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition:.4s;
+}
+.pc-icon-wrapper:hover {
+  transform:scale(1.1);
+}
+.pc-icon{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	background: url("../images/logo-pushcrew.png") center center no-repeat;
+	background-size: contain;
+	margin: 1em;
+}
+.segments{
+	display: none;
+	margin-bottom: 1em;
+	width: 100%;
+	box-shadow: 3px 5px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border-radius: 5px;
+	background-color: #fff;
+}
+.segments label{
+	display: block;
+	padding:0 .8em;	
+}
+.segments input{
+	margin-right: 0.7em !important;
+}
+.segments:after{
+	content: "";
+	display: block;
+	width: 1em;
+	height: 1em;
+	background-color: #fff;
+	position: absolute;
+	right: 1.6em;
+	bottom: 5em;
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.16);
+	transform: rotate(45deg);
+}
+.pc-sub-btn{
+	margin-top: 1em;
+	text-align: center;
+	padding-bottom: 1em;
+}
+.pc-sub-btn button{
+	padding: .5em 1em;
+	background: transparent;
+	border: 1px solid #444;
+	font-size: 1em;
+	transition: .3s;
+	outline: none;
+}
+.pc-sub-btn button:hover{
+	background-color: #444;
+	color: #fff;
+}
