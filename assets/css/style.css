@@ -75,6 +75,7 @@ h1{
 	font-size: 1em;
 	transition: .3s;
 	outline: none;
+	color: #444 !important;
 }
 .pc-sub-btn button:hover{
 	background-color: #444;
