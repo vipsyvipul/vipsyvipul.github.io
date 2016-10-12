@@ -1,74 +1,74 @@
 .pc-segment{
-	position: fixed;
-	right: 5em;
-	bottom: 3em;
-	width: 12em;
-	z-index: 99999;
+	position: fixed !important;
+	right: 5em !important;
+	bottom: 3em !important;
+	width: 12em !important;
+	z-index: 99999 !important;
 }
 .pc-sub-text{
-	margin: 0 .3em .5em .3em;
-	padding-top: 1em;
+	margin: 0 .3em .5em .3em !important;
+	padding-top: 1em !important;
 	font-size: 1em !important;
 }
 .pc-icon-wrapper{
-	width: 4.5em;
-	height: 4.5em;
-	background-color: #fff;
-	border-radius: 50%;
-	float: right;
-	box-shadow: 3px 5px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-	transition:.4s;
+	width: 4.5em !important;
+	height: 4.5em !important;
+	background-color: #fff !important;
+	border-radius: 50% !important;
+	float: right !important;
+	box-shadow: 3px 5px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) !important;
+	transition:.4s !important;
 }
 .pc-icon-wrapper:hover {
-  transform:scale(1.1);
+  transform:scale(1.1) !important;
 }
 .pc-icon{
-	width: 40px;
-	height: 40px;
-	position: absolute;
-	background: url("../images/logo-pushcrew.png") center center no-repeat;
-	background-size: contain;
-	margin: 1em;
+	width: 40px !important;
+	height: 40px !important;
+	position: absolute !important;
+	background: url("../images/logo-pushcrew.png") center center no-repeat !important;
+	background-size: contain !important;
+	margin: 1em !important;
 }
 .segments{
 	display: none;
-	margin-bottom: 1em;
-	width: 100%;
-	box-shadow: 3px 5px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-	border-radius: 5px;
-	background-color: #fff;
+	margin-bottom: 1em !important;
+	width: 100% !important;
+	box-shadow: 3px 5px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) !important;
+	border-radius: 5px !important;
+	background-color: #fff !important;
 }
 .segments label{
-	display: block;
-	padding:0 .8em;	
+	display: block !important;
+	padding:0 .8em !important;	
 }
 .segments input{
 	margin-right: 0.7em !important;
 }
 .segments:after{
-	content: "";
-	display: block;
-	width: 1em;
-	height: 1em;
-	background-color: #fff;
-	position: absolute;
-	right: 1.6em;
-	bottom: 5em;
-	box-shadow: 2px 2px 4px rgba(0,0,0,0.16);
-	transform: rotate(45deg);
+	content: "" !important;
+	display: block !important;
+	width: 1em !important;
+	height: 1em !important;
+	background-color: #fff !important;
+	position: absolute !important;
+	right: 1.6em !important;
+	bottom: 5em !important;
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.16) !important;
+	transform: rotate(45deg) !important;
 }
 .pc-sub-btn{
-	margin-top: 1em;
-	text-align: center;
-	padding-bottom: 1em;
+	margin-top: 1em !important;
+	text-align: center !important;
+	padding-bottom: 1em !important;
 }
 .pc-sub-btn button{
-	padding: .5em 1em;
-	background: transparent;
-	border: 1px solid #444;
-	font-size: 1em;
-	transition: .3s;
-	outline: none;
+	padding: .5em 1em !important;
+	background: transparent !important;
+	border: 1px solid #444 !important;
+	font-size: 1em !important;
+	transition: .3s !important;
+	outline: none !important;
 	color: #444 !important;
 }
 .pc-sub-btn button:hover{
