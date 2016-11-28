@@ -19,6 +19,7 @@ $(document).ready(function() {
 
     $(function() {
         var $vvForm = $('#vv-form');
+        var gender_val = $('#gender').find(':selected').val();
         $vvForm.submit(function(e) {
             e.preventDefault();
             $.ajax({
@@ -30,6 +31,7 @@ $(document).ready(function() {
                     $('input[type="submit"]').val('Sending...');
                 },
                 success: function(data) {
+                    _gaq.push(['_setCustomVar',1,'Gender',gender_val,2]);
                     $('input[type="submit"]').val('Thank You').prop('disabled', true);
                 },
                 error: function(err) {
