@@ -19,7 +19,11 @@ $(document).ready(function() {
 
     $(function() {
         var $vvForm = $('#vv-form');
-        var gender_val = $('#gender').find(':selected').val();
+        $('#gender').on('click',function(){
+            var gender_val = $(this).val();
+            console.log(gender_val);
+        });
+        
         $vvForm.submit(function(e) {
             e.preventDefault();
             $.ajax({
@@ -31,8 +35,8 @@ $(document).ready(function() {
                     $('input[type="submit"]').val('Sending...');
                 },
                 success: function(data) {
-                    _gaq.push(['_setCustomVar',1,'Gender',gender_val,2]);
                     $('input[type="submit"]').val('Thank You').prop('disabled', true);
+                    ga('_setCustomVar',1,'Gender',gender_val,2);
                 },
                 error: function(err) {
                     $('input[type="submit"]').val('Resend!');
