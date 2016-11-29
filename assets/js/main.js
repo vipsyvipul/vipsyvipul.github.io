@@ -13,18 +13,17 @@ $(document).ready(function() {
         }
     });
 
-    $('#gender').on('click', function() {
-        var gender_val = $('#gender :selected').val();
-        console.log(gender_val);
-    });
+    
 
     $(function() {
         var loc = window.location.pathname;
         $('.menu-list a[href="' + loc + '"]').addClass("active");
     });
 
-    $(function() {
+    function submitForm(gender_value) {
         var $vvForm = $('#vv-form');
+        var gender_val = gender_value;
+        console.log(gender_val);
         $vvForm.submit(function(e) {
             e.preventDefault();
             $.ajax({
@@ -44,5 +43,10 @@ $(document).ready(function() {
                 }
             });
         });
+    }
+    $('#gender').on('click', function() {
+        var gender_val = $('#gender :selected').val();
+        submitForm(gender_val);
+        console.log(gender_val);
     });
 });
