@@ -22,7 +22,7 @@ $(document).ready(function() {
 
     $(function() {
         var $vvForm = $('#vv-form');
-        var dimensionValue = $('#gender').on('click', function() { $(this).val(); });
+        $('#gender').on('click', function() { var dimensionValue = $(this).val(); });
         console.log(dimensionValue);
         $vvForm.submit(function(e) {
             e.preventDefault();
