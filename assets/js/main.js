@@ -19,10 +19,10 @@ $(document).ready(function() {
         var loc = window.location.pathname;
         $('.menu-list a[href="' + loc + '"]').addClass("active");
     });
-
+// $('#gender').on('click', function() { var dimensionValue = $(this).val(); });
     $(function() {
         var $vvForm = $('#vv-form');
-        $('#gender').on('click', function() { var dimensionValue = $(this).val(); });
+        var dimensionValue = $('#gender :selected').val();
         console.log(dimensionValue);
         $vvForm.submit(function(e) {
             e.preventDefault();
