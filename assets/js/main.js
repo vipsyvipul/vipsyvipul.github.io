@@ -20,10 +20,8 @@ $(document).ready(function() {
         $('.menu-list a[href="' + loc + '"]').addClass("active");
     });
 
-    function submitForm(gender_value) {
+    $(function() {
         var $vvForm = $('#vv-form');
-        var gender_val = gender_value;
-        console.log(gender_val);
         $vvForm.submit(function(e) {
             e.preventDefault();
             $.ajax({
@@ -35,6 +33,7 @@ $(document).ready(function() {
                     $('input[type="submit"]').val('Sending...');
                 },
                 success: function(data) {
+                    console.log(data);
                     $('input[type="submit"]').val('Thank You').prop('disabled', true);
                     ga('_setCustomVar', 1, 'Gender', gender_val, 2);
                 },
@@ -43,10 +42,6 @@ $(document).ready(function() {
                 }
             });
         });
-    }
-    $('#gender').on('click', function() {
-        var gender_val = $('#gender :selected').val();
-        submitForm(gender_val);
-        console.log(gender_val);
     });
+    
 });
