@@ -13,7 +13,7 @@ $(document).ready(function() {
         }
     });
 
-    
+
 
     $(function() {
         var loc = window.location.pathname;
@@ -22,6 +22,8 @@ $(document).ready(function() {
 
     $(function() {
         var $vvForm = $('#vv-form');
+        var dimensionValue = $('#gender').on('click', function() { $(this).val(); });
+        console.log(dimensionValue);
         $vvForm.submit(function(e) {
             e.preventDefault();
             $.ajax({
@@ -35,7 +37,8 @@ $(document).ready(function() {
                 success: function(data) {
                     console.log(data);
                     $('input[type="submit"]').val('Thank You').prop('disabled', true);
-                    ga('_setCustomVar', 1, 'Gender', gender_val, 2);
+                    ga('set', 'dimension1', dimensionValue);
+                    ga('send','pageview','/work/');
                 },
                 error: function(err) {
                     $('input[type="submit"]').val('Resend!');
@@ -43,5 +46,5 @@ $(document).ready(function() {
             });
         });
     });
-    
+
 });
