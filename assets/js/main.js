@@ -39,6 +39,7 @@ $(document).ready(function() {
                     $('input[type="submit"]').val('Thank You').prop('disabled', true);
                     // ga('set', 'dimension1', dimensionValue);
                     // ga('send', 'pageview', '/work/');
+                    console.log(dimensionValue);
                     ga('send', 'pageview', {
                         'dimension1': dimensionValue
                     });
