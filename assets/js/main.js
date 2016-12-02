@@ -19,7 +19,7 @@ $(document).ready(function() {
         var loc = window.location.pathname;
         $('.menu-list a[href="' + loc + '"]').addClass("active");
     });
-// $('#gender').on('click', function() { var dimensionValue = $(this).val(); });
+    // $('#gender').on('click', function() { var dimensionValue = $(this).val(); });
     $(function() {
         var $vvForm = $('#vv-form');
         var dimensionValue = $('#gender :selected').val();
@@ -37,8 +37,12 @@ $(document).ready(function() {
                 success: function(data) {
                     console.log(data);
                     $('input[type="submit"]').val('Thank You').prop('disabled', true);
-                    ga('set', 'dimension1', dimensionValue);
-                    ga('send','pageview','/work/');
+                    // ga('set', 'dimension1', dimensionValue);
+                    // ga('send', 'pageview', '/work/');
+                    ga('send', 'pageview', {
+                        'dimension1': dimensionValue;
+                    });
+
                 },
                 error: function(err) {
                     $('input[type="submit"]').val('Resend!');
