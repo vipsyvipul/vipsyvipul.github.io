@@ -40,7 +40,7 @@ $(document).ready(function() {
                     // ga('set', 'dimension1', dimensionValue);
                     // ga('send', 'pageview', '/work/');
                     ga('send', 'pageview', {
-                        'dimension1': dimensionValue;
+                        'dimension1': dimensionValue
                     });
 
                 },
