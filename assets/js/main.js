@@ -22,7 +22,8 @@ $(document).ready(function() {
     // $('#gender').on('click', function() { var dimensionValue = $(this).val(); });
     $(function() {
         var $vvForm = $('#vv-form');
-        var dimensionValue = $('#gender :selected').val();
+        // var dimensionValue = $('#gender :selected').val();
+        $('#gender').on('click', function() { ga('set','dimension1', $(this).val()) });
         console.log(dimensionValue);
         $vvForm.submit(function(e) {
             e.preventDefault();
@@ -39,10 +40,10 @@ $(document).ready(function() {
                     $('input[type="submit"]').val('Thank You').prop('disabled', true);
                     // ga('set', 'dimension1', dimensionValue);
                     // ga('send', 'pageview', '/work/');
-                    console.log(dimensionValue);
-                    ga('send', 'pageview', {
-                        'dimension1': dimensionValue
-                    });
+                    // console.log(dimensionValue);
+                    // ga('send', 'pageview', {
+                    //     'dimension1': dimensionValue
+                    // });
 
                 },
                 error: function(err) {
