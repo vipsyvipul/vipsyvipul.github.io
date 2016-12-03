@@ -24,7 +24,7 @@ $(document).ready(function() {
         var $vvForm = $('#vv-form');
         // var dimensionValue = $('#gender :selected').val();
         $('#gender').on('click', function() {
-            ga('send', 'event' {
+            ga('send', 'event', {
                 'dimension1': $(this).val()
             });
         });
