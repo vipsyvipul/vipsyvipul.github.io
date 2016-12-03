@@ -23,8 +23,8 @@ $(document).ready(function() {
     $(function() {
         var $vvForm = $('#vv-form');
         ga('set', {
-            'dimension5': $('#gender :selected').val(),
-            'metric5': 1
+            'dimension1': $('#gender :selected').val(),
+            'metric1': 1
         });
         $vvForm.submit(function(e) {
             e.preventDefault();
