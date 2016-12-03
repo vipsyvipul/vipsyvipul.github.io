@@ -22,16 +22,10 @@ $(document).ready(function() {
     // $('#gender').on('click', function() { var dimensionValue = $(this).val(); });
     $(function() {
         var $vvForm = $('#vv-form');
-        // var dimensionValue = $('#gender :selected').val();
-        $('#gender').on('click', function() {
-            ga('send', 'event', {
-                'dimension1': $(this).val()
-            });
+        ga('set', {
+            'dimension5': $('#gender :selected').val(),
+            'metric5': 1
         });
-        // ga('send', 'event' {
-        //     'dimension1': dimensionValue
-        // });
-        // console.log(dimensionValue);
         $vvForm.submit(function(e) {
             e.preventDefault();
             $.ajax({
