@@ -41,6 +41,7 @@ $(document).ready(function() {
                     $('input[type="submit"]').val('Thank You').prop('disabled', true);
                     console.log($('#gender :selected').val());
                     ga('set', 'dimension1', $('#gender :selected').val());
+                    ga('send','pageview');
                     console.log($('#gender :selected').val());
                     // ga('set', 'dimension1', dimensionValue);
                     // ga('send', 'pageview', '/work/');
