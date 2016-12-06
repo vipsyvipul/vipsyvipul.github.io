@@ -40,8 +40,12 @@ $(document).ready(function() {
                     console.log(data);
                     $('input[type="submit"]').val('Thank You').prop('disabled', true);
                     console.log($('#gender :selected').val());
-                    ga('set', 'dimension1', $('#gender :selected').val());
-                    ga('send','pageview');
+                    ga('set', {
+                        'dimension1': $('#gender :selected').val(),
+                        'metric1': 1
+                    });
+
+                    ga('send', 'pageview');
                     console.log($('#gender :selected').val());
                     // ga('set', 'dimension1', dimensionValue);
                     // ga('send', 'pageview', '/work/');
