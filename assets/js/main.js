@@ -40,22 +40,12 @@ $(document).ready(function() {
                     console.log(data);
                     $('input[type="submit"]').val('Thank You').prop('disabled', true);
                     console.log($('#gender :selected').val());
-                    ga('set', {
-                        'dimension1': $('#gender :selected').val(),
+                    ga('set', 'dimension1', $('#gender :selected').val());
+
+                    ga('send', 'event', 'signup', 'submit', {
                         'metric1': 1
                     });
-
-                    ga('send', 'pageview');
                     console.log($('#gender :selected').val());
-                    // ga('set', 'dimension1', dimensionValue);
-                    // ga('send', 'pageview', '/work/');
-                    // console.log(dimensionValue);
-                    // ga('send', 'pageview', {
-                    //     'dimension1': dimensionValue
-                    // });
-
-
-
                 },
                 error: function(err) {
                     $('input[type="submit"]').val('Resend!');
