@@ -19,13 +19,9 @@ $(document).ready(function() {
         var loc = window.location.pathname;
         $('.menu-list a[href="' + loc + '"]').addClass("active");
     });
-    // $('#gender').on('click', function() { var dimensionValue = $(this).val(); });
+    
     $(function() {
         var $vvForm = $('#vv-form');
-        // ga('set', {
-        //     'dimension1': $('#gender :selected').val(),
-        //     'metric1': 1
-        // });
         $vvForm.submit(function(e) {
             e.preventDefault();
             $.ajax({
@@ -39,13 +35,23 @@ $(document).ready(function() {
                 success: function(data) {
                     console.log(data);
                     $('input[type="submit"]').val('Thank You').prop('disabled', true);
+                    // console.log($('#gender :selected').val());
+                    // ga('set', 'dimension1', $('#gender :selected').val());
+
+                    // ga('send', 'event', 'signup', 'submit', {
+                    //     'metric1': 1
+                    // });
                     console.log($('#gender :selected').val());
-                    ga('set', 'dimension1', $('#gender :selected').val());
+                    console.log($('#work-inquiry :selected').val());
 
                     ga('send', 'event', 'signup', 'submit', {
+                        'dimension1': $('#gender :selected').val(),
+                        'dimension2': $('#work-inquiry :selected').val(),
                         'metric1': 1
                     });
+                    console.log($('#work-inquiry :selected').val());
                     console.log($('#gender :selected').val());
+
                 },
                 error: function(err) {
                     $('input[type="submit"]').val('Resend!');
