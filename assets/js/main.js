@@ -35,12 +35,6 @@ $(document).ready(function() {
                 success: function(data) {
                     console.log(data);
                     $('input[type="submit"]').val('Thank You').prop('disabled', true);
-                    // console.log($('#gender :selected').val());
-                    // ga('set', 'dimension1', $('#gender :selected').val());
-
-                    // ga('send', 'event', 'signup', 'submit', {
-                    //     'metric1': 1
-                    // });
                     console.log($('#gender :selected').val());
                     console.log($('#work-inquiry :selected').val());
 
