@@ -36,14 +36,11 @@ $(document).ready(function() {
                     console.log(data);
                     $('input[type="submit"]').val('Thank You').prop('disabled', true);
                     console.log($('#gender :selected').val());
-                    console.log($('#work-inquiry :selected').val());
-
+                    
                     ga('send', 'event', 'signup', 'submit', {
                         'dimension1': $('#gender :selected').val(),
-                        'dimension2': $('#work-inquiry :selected').val(),
                         'metric1': 1
                     });
-                    console.log($('#work-inquiry :selected').val());
                     console.log($('#gender :selected').val());
 
                 },
